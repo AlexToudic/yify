@@ -29,10 +29,8 @@ module.exports.apiCall=function(urlpart,options,id,callback,errorCallback,method
         }
     };
     url = baseUrl+apiEndPoint+params;
-    console.log(url);
     http.request(rest,function(res){
         res.setEncoding('utf8');
-        console.log(res.statusCode);
         res.on('data',function(chunk){
             result += chunk;
         });
