@@ -1,18 +1,23 @@
 {
-    "name": "yify",
-    "version": "0.0.1",
-    "dependencies" : {
-        "querystring"   :  "0.1.0"
+  "name": "yify",
+  "version": "0.0.2",
+  "dependencies": {
+    "querystring": "0.1.0",
+    "defaultify": "0.0.3"
+  },
+  "contributors": [
+    {
+      "name": "Vijay Sai",
+      "email": "vijaysaijnv@gmail.com"
     },
-    "contributors": [
-        {
-            "name": "Vijay Sai",
-            "email": "vijaysaijnv@gmail.com"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/vijaysai/yify.git"
-    },
-    "main": "yify.js"
+    {
+      "name": "Alexandre Toudic",
+      "email": "alexandre.toudic@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vijaysai/yify.git"
+  },
+  "main": "yify.js"
 }

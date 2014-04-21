@@ -1,17 +1,22 @@
-var  api = require("./api");
+var api        = require("./api");
+var defaultify = require("defaultify");
 
-function getMovies(callback)
+function getMovies(options, callback)
 {
-    var options  = {
+    var defaultOptions  = {
+        keywords : "",
         limit : 5,
         set : 1,
-        quality : 720,
+        quality : "720p",
         rating : 0,
         genre : "ALL",
         sort : "date",
         order : "desc"
     };
-    api.apiCall("list.json",options,null,callback,null,"GET");
+
+    var opts = defaultify(options, defaultOptions).value;
+
+    api.apiCall("list.json",opts,null,callback,null,"GET");
 }
 
 function getUpcomingMovies(callback)
