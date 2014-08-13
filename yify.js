@@ -5,9 +5,9 @@ function getMovies(options, callback)
 {
     var defaultOptions  = {
         keywords : "",
-        limit : 5,
+        limit : 20,
         set : 1,
-        quality : "720p",
+        quality : "ALL",
         rating : 0,
         genre : "ALL",
         sort : "date",
